@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMigrationSolution.Windows", "DataMigrationSolution.Windows\DataMigrationSolution.Windows.csproj", "{DED5F356-394E-41D2-B720-60E1AB0CA08A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMigrationSolution.BL", "DataMigrationSolution.BL\DataMigrationSolution.BL.csproj", "{94A349A6-75CB-4F28-8F1E-97F711DF03EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMigrationSolution.Library", "DataMigrationSolution.Library\DataMigrationSolution.Library.csproj", "{C2DE071B-A31F-4FB7-B2F0-A77403D06792}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DED5F356-394E-41D2-B720-60E1AB0CA08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED5F356-394E-41D2-B720-60E1AB0CA08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED5F356-394E-41D2-B720-60E1AB0CA08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED5F356-394E-41D2-B720-60E1AB0CA08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A349A6-75CB-4F28-8F1E-97F711DF03EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A349A6-75CB-4F28-8F1E-97F711DF03EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A349A6-75CB-4F28-8F1E-97F711DF03EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A349A6-75CB-4F28-8F1E-97F711DF03EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DE071B-A31F-4FB7-B2F0-A77403D06792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DE071B-A31F-4FB7-B2F0-A77403D06792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DE071B-A31F-4FB7-B2F0-A77403D06792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DE071B-A31F-4FB7-B2F0-A77403D06792}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
