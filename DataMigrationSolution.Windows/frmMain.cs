@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataMigrationSolution.BL;
+using DataMigrationSolution.Library;
+using System;
 using System.Windows.Forms;
 
 namespace DataMigrationSolution.Windows
@@ -23,6 +25,18 @@ namespace DataMigrationSolution.Windows
         private void btnAccounts_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            var UserRepository = new UserRepository();
+            dataGridView1.DataSource = UserRepository.LoadAll();
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            var exportService = new ExportService();
+            exportService.ExportToExcel();
         }
     }
 }
