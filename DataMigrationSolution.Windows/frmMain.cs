@@ -7,6 +7,7 @@ namespace DataMigrationSolution.Windows
 {
     public partial class FrmMain : Form
     {
+        public string exportName;
         public FrmMain()
         {
             InitializeComponent();
@@ -22,21 +23,34 @@ namespace DataMigrationSolution.Windows
 
         }
 
-        private void btnAccounts_Click(object sender, EventArgs e)
-        {
-
-        }
+        //private void btnAccounts_Click(object sender, EventArgs e)
+        //{
+        //    exportName = "Accounts";
+        //    var accountRepository = new AccountRepository();
+        //    dataGridView1.DataSource = accountRepository.LoadAll();
+        //}
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            var UserRepository = new UserRepository();
-            dataGridView1.DataSource = UserRepository.LoadAll();
+            exportName = "Users";
+            var userRepository = new UserRepository();
+            dataGridView1.DataSource = userRepository.LoadAll();
         }
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
             var exportService = new ExportService();
-            exportService.ExportToExcel();
+            if (exportName != null)
+                exportService.Export(exportName);
+            else
+                MessageBox.Show($"{exportName} is null,please check");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            exportName = "Accounts";
+            var accountRepository = new AccountRepository();
+            dataGridView1.DataSource = accountRepository.LoadAll();
         }
     }
 }
