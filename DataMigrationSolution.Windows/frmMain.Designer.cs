@@ -57,6 +57,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.lblMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -66,7 +67,7 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 211);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 240);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1220, 633);
             this.dataGridView1.TabIndex = 0;
@@ -271,6 +272,7 @@
             this.btnSales.TabIndex = 0;
             this.btnSales.Text = "Sales";
             this.btnSales.UseVisualStyleBackColor = false;
+            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
             // 
             // groupBox2
             // 
@@ -352,6 +354,7 @@
             this.btnMarketing.TabIndex = 7;
             this.btnMarketing.Text = "Marketing";
             this.btnMarketing.UseVisualStyleBackColor = false;
+            this.btnMarketing.Click += new System.EventHandler(this.btnMarketing_Click);
             // 
             // button3
             // 
@@ -362,6 +365,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Services";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -372,6 +376,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "Settings";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -382,6 +387,17 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "Help";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(12, 204);
+            this.lblMessage.MinimumSize = new System.Drawing.Size(1200, 20);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(1200, 20);
+            this.lblMessage.TabIndex = 11;
+            this.lblMessage.Text = "Data loading";
             // 
             // FrmMain
             // 
@@ -389,7 +405,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1264, 985);
+            this.ClientSize = new System.Drawing.Size(1264, 845);
+            this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -448,6 +465,7 @@
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button btnUsers;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
 
